@@ -3,7 +3,7 @@ import React from 'react';
 const AProposPage = () => {
     return (
         <div>
-           A Propos 
+           Ici A Propos 
         </div>
     );
 };

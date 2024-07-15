@@ -1,9 +1,10 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 
 const AccueilPage = () => {
     return (
         <div>
-          <h1> Ici l'accueil</h1>  
+          <Navigation></Navigation>
         </div>
     );
 };
