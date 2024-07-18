@@ -5,7 +5,8 @@ const AccueilPage = () => {
     <>
       <main className="main">
         {" "}
-        <h1>
+        <h1>Accueil</h1>
+        <p>
           {" "}
           When Chuck Norris writes, he makes paper bleed. Chuck Norris named his
           daughter Mercy. The day she was born was the only day Chuck Norris
@@ -18,7 +19,7 @@ const AccueilPage = () => {
           Norris used to beat the shit out of his shadow because it was
           following to close. It now stands a safe 30 feet behind him. Time
           waits for no man. Unless that man is Chuck Norris.
-        </h1>
+        </p>
       </main>
     </>
   );

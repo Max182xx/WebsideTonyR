@@ -27,20 +27,20 @@ function Navigation() {
           </Link>
         </li>
         <li className="navbar_item slideInDown-2">
-          <Link to="/apropos" className="navbar_link" onClick={handleCloseMenu}>
+          <Link to="apropos" className="navbar_link" onClick={handleCloseMenu}>
             {" "}
             A propos
           </Link>
         </li>
         <li className="navbar_item slideInDown-3">
-          <Link to="/contact" className="navbar_link" onClick={handleCloseMenu}>
+          <Link to="contact" className="navbar_link" onClick={handleCloseMenu}>
             {" "}
             Contact
           </Link>
         </li>
         <li className="navbar_item slideInDown-4">
           <Link
-            to="/portfolio"
+            to="portfolio"
             className="navbar_link"
             onClick={handleCloseMenu}
           >

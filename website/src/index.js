@@ -7,6 +7,8 @@ import AProposPage from "./pages/AProposPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import CguPage from "./pages/CguPage";
+import MentionsLegals from "./pages/MentionsLegals";
 
 // Configure les routes et rend l'applications dans le DOM
 const router = createBrowserRouter([
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "portfolio",
         element: <PortfolioPage />,
+      },
+      {
+        path: "cgu",
+        element: <CguPage />,
+      },
+      {
+        path: "mentionsLegals",
+        element: <MentionsLegals />,
       },
     ],
   },
