@@ -42,7 +42,10 @@ const Footer = () => {
         </div>
         <div className="sb_footer-below">
           <div className="sb_footer-copyright">
-            <p>@{new Date().getFullYear()} CodeInn. All right reserved</p>
+            <p>
+              {new Date().getFullYear()} TONY <span class="trademark">® </span>& Max182
+              all right reserved
+            </p>
           </div>
         </div>
       </div>

@@ -65,6 +65,11 @@ hr {
   font-weight: 400;
 }
 
+  .trademark {
+    font-size: 2em;
+        vertical-align: -0.3em; 
+  }
+
 @media screen and (max-width: 667px) {
   .footer {
     font-size: auto;
@@ -77,5 +82,10 @@ hr {
   .image-custom-size {
     width: 30px;
     height: 20;
+  }
+
+  .trademark {
+    font-size: 2em;
+        vertical-align: -0.3em; 
   }
 }
