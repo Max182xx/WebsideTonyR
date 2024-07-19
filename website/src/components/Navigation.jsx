@@ -18,7 +18,7 @@ function Navigation() {
 
   return (
     <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbar_logo"> TonyR</div>
+      <div className="navbar_logo"> Tony R</div>
       <ul className="navbar_links">
         <li className="navbar_item slideInDown-1">
           <Link to="/" className="navbar_link" onClick={handleCloseMenu}>
