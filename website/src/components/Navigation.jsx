@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Navigation.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 // Composant qui s'affiche sur toutes mes pages
 
@@ -18,7 +19,9 @@ function Navigation() {
 
   return (
     <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbar_logo"> Tony R</div>
+      <div className="navbar_logo">
+        <img src={logo} alt="Logo" className="logo-image" />
+      </div>
       <ul className="navbar_links">
         <li className="navbar_item slideInDown-1">
           <Link to="/" className="navbar_link" onClick={handleCloseMenu}>

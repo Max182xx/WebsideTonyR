@@ -1,3 +1,8 @@
+.logo-image {
+  width: 100px; 
+  height: auto; 
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -143,4 +148,7 @@ a {
   .show-nav .slideInDown-4 {
     transition: all 1.3s ease-out;
   }
+   .logo-image {
+    width: 60px;
+   }
 }
