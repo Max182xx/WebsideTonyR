@@ -11,6 +11,7 @@ function App() {
       <Navigation />
       <main className="main-content">
         <Outlet />
+  
       </main>
       <Footer/>
     </div>

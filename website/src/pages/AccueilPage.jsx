@@ -1,4 +1,9 @@
 import React from "react";
+import fb from "../assets/images/fb.webp";
+import insta from "../assets/images/insta.webp";
+import git from "../assets/images/git.webp";
+import linkedin from "../assets/images/linkedin.webp";
+
 
 const AccueilPage = () => {
   return (
@@ -6,6 +11,31 @@ const AccueilPage = () => {
       <main className="main">
         {" "}
         <h1>Accueil</h1>
+        <div classname="container-first">
+          <h2>
+            <span>Bienvenue </span>
+            <span>sur le site de </span>
+            <span>TONY R</span>
+          </h2>
+          
+
+
+
+        </div>
+        <ul className="medias">
+          <li className="bulle">
+            <img src={fb} alt="facebook" className="logo-medias" />
+          </li>
+          <li className="bulle">
+            <img src={insta} alt="instagram" className="logo-medias" />
+          </li>
+          <li className="bulle">
+            <img src={git} alt="github" className="logo-medias" />
+          </li>
+          <li className="bulle">
+            <img src={linkedin} alt="linkedin" className="logo-medias" />
+          </li>
+        </ul>
         <p>
           {" "}
           When Chuck Norris writes, he makes paper bleed. Chuck Norris named his
