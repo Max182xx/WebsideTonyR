@@ -5,11 +5,12 @@ import git from "../assets/images/git.webp";
 import linkedin from "../assets/images/linkedin.webp";
 
 
+
 const AccueilPage = () => {
   return (
     <>
       <main className="main">
-        {" "}
+       
         <h1>Accueil</h1>
         <div classname="container-first">
           <h2>
@@ -17,10 +18,6 @@ const AccueilPage = () => {
             <span>sur le site de </span>
             <span>TONY R</span>
           </h2>
-          
-
-
-
         </div>
         <ul className="medias">
           <li className="bulle">
