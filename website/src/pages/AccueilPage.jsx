@@ -4,14 +4,14 @@ import insta from "../assets/images/insta.webp";
 import git from "../assets/images/git.webp";
 import linkedin from "../assets/images/linkedin.webp";
 
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 
 const AccueilPage = () => {
   return (
     <>
       <main className="main">
-       
-        <h1>Accueil</h1>
+        {/*   <h1>Accueil</h1>
         <div classname="container-first">
           <h2>
             <span>Bienvenue </span>
@@ -47,6 +47,20 @@ const AccueilPage = () => {
           following to close. It now stands a safe 30 feet behind him. Time
           waits for no man. Unless that man is Chuck Norris.
         </p>
+*/}
+        <div className="menu">
+          <i className="logo"></i>
+        </div>
+
+        <div className="menu-items">
+          <div className="items1" id="items1">
+            <center>
+              <a href="#">
+                <FontAwesomeIcon icon={faShareNodes} size="2x" />{" "}
+              </a>
+            </center>
+          </div>
+        </div>
       </main>
     </>
   );
