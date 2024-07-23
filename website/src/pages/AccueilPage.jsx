@@ -4,8 +4,8 @@ import insta from "../assets/images/insta.webp";
 import git from "../assets/images/git.webp";
 import linkedin from "../assets/images/linkedin.webp";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const AccueilPage = () => {
   return (
@@ -56,7 +56,7 @@ const AccueilPage = () => {
           <div className="items1" id="items1">
             <center>
               <a href="#">
-                <FontAwesomeIcon icon={faShareNodes} size="2x" />{" "}
+                <FontAwesomeIcon icon="fa-solid fa-house" size="2x" />
               </a>
             </center>
           </div>

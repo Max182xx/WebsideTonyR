@@ -22,55 +22,8 @@ body {
 
 }
 
-/*
-h2 {
-  text-transform: uppercase;
-  font-size: 60px;
-  color: #f1f1f1;
-}
-h2 span {
-  position: relative;
-}
 
-.medias{
-  position: absolute;
-  right: 3.3%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.bulle{
-  list-style-type: none;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid #f1f1f1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15px 0;
-  background: #f1f1f1;
-  cursor: pointer;
-  position: relative;
-}
-
-.logo-medias{
-  width:40px;
-  height: 40px;
-}
-/*@keyframes rotateBackground {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.main {
+/* .main {
   min-height: 200vh;
   padding: 6rem 1rem 1rem;
   margin: 0;
@@ -124,8 +77,8 @@ h2 span {
   position: relative;
   font-size: 43px;
 }
-.fa-brands {
-position: relative;
+.fa-solid {
+position: absolute;
 }
 a{
   color: tomato;
