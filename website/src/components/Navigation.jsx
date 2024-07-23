@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Navigation.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-
-// Composant qui s'affiche sur toutes mes pages
 
 function Navigation() {
   const [showLinks, setShowLinks] = useState(false);
 
+  const [isResponsiveMode, setIsResponsiveMode] = useState(
+    window.innerWidth <= 767
+  );
+
+  // Utilisation de useLocation pour exclure la navbar de la page d'accueil
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsResponsiveMode(window.innerWidth <= 767);
+    };
+
+    // Assure l'affiche du menu burger quand la fenêtre est redimensionné 
+    window.addEventListener("resize", handleResize);
+
+    // Nettoyer l'écouteur d'événements lors du démontage du composant pour éviter les fuites de mémoire
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const handleShowlinks = () => {
     setShowLinks(!showLinks);
   };
@@ -16,47 +33,62 @@ function Navigation() {
   const handleCloseMenu = () => {
     setShowLinks(false); // Ferme le menu lorsque n'importe quel lien est cliqué
   };
-
-  return (
-    <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbar_logo">
-        <img src={logo} alt="Logo" className="logo-image" />
-      </div>
-      <ul className="navbar_links">
-        <li className="navbar_item slideInDown-1">
-          <Link to="/" className="navbar_link" onClick={handleCloseMenu}>
-            {" "}
-            Accueil
-          </Link>
-        </li>
-        <li className="navbar_item slideInDown-2">
-          <Link to="apropos" className="navbar_link" onClick={handleCloseMenu}>
-            {" "}
-            A propos
-          </Link>
-        </li>
-        <li className="navbar_item slideInDown-3">
-          <Link to="contact" className="navbar_link" onClick={handleCloseMenu}>
-            {" "}
-            Contact
-          </Link>
-        </li>
-        <li className="navbar_item slideInDown-4">
-          <Link
-            to="portfolio"
-            className="navbar_link"
-            onClick={handleCloseMenu}
+  if (!(isHomePage && !isResponsiveMode)) {
+    return (
+      <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+        <div className="navbar_logo">
+          <img src={logo} alt="Logo" className="logo-image" />
+        </div>
+        <ul className="navbar_links">
+          <li className="navbar_item slideInDown-1">
+            <Link to="/" className="navbar_link" onClick={handleCloseMenu}>
+              {" "}
+              Accueil
+            </Link>
+          </li>
+          <li className="navbar_item slideInDown-2">
+            <Link
+              to="apropos"
+              className="navbar_link"
+              onClick={handleCloseMenu}
+            >
+              {" "}
+              A propos
+            </Link>
+          </li>
+          <li className="navbar_item slideInDown-3">
+            <Link
+              to="contact"
+              className="navbar_link"
+              onClick={handleCloseMenu}
+            >
+              {" "}
+              Contact
+            </Link>
+          </li>
+          <li className="navbar_item slideInDown-4">
+            <Link
+              to="portfolio"
+              className="navbar_link"
+              onClick={handleCloseMenu}
+            >
+              {" "}
+              Portfolio
+            </Link>
+          </li>
+        </ul>
+        {isResponsiveMode && (
+          <button
+            className="navbar_burger"
+            onClick={() => setShowLinks(!showLinks)}
           >
-            {" "}
-            Portfolio
-          </Link>
-        </li>
-      </ul>
-      <button className="navbar_burger" onClick={handleShowlinks}>
-        <span className="burger-bar"></span>
-      </button>
-    </div>
-  );
+            <span className="burger-bar"></span>
+          </button>
+        )}
+      </div>
+    );
+  }
+  return null; // Ne rien rendre si le menu doit être caché
 }
 
 export default Navigation;
