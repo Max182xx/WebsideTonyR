@@ -12,13 +12,11 @@
 body {
   margin: 0;
   font-family: "Poppins", "sans-serif";
- /*  background-size: cover; /* Ensures the background covers the whole page */
- /* background-repeat: no-repeat; /* Ensures the background doesn't repeat */
- /* background-position: center center; /* Centers the background image */
- /* position: relative;
- /* overflow-x: hidden;
-  */
-  background-color :#323642;
+  background-size: cover; /* Ensures the background covers the whole page */
+  background-repeat: no-repeat; /* Ensures the background doesn't repeat */
+  background-position: center center; /* Centers the background image */
+  position: relative;
+  overflow-x: hidden;
 
 }
 
@@ -78,7 +76,7 @@ body {
   font-size: 43px;
 }
 .fa-solid {
-position: absolute;
+position: relative;
 }
 a{
   color: tomato;
