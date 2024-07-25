@@ -51,14 +51,14 @@ const AccueilPage = () => {
             </div>
             <div className="item2" id="item2" style={item2Style}>
               <center>
-                <a href="portfolio">
+                <a href="Portfolio">
                   <FontAwesomeIcon className="fa" icon={faPalette} />
                 </a>
               </center>
             </div>
             <div className="item3" id="item3" style={item3Style}>
               <center>
-                <a href="contact">
+                <a href="Contact">
                   <FontAwesomeIcon className="fa" icon={faPaintbrush} />
                 </a>
               </center>
