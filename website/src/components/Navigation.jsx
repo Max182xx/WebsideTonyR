@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../styles/Navigation.css";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import { ResponsiveModeProvider } from "./ResponsiveModeContext";
 
-function Navigation() {
+function Navigation({children}) {
   const [showLinks, setShowLinks] = useState(false);
 
   const [isResponsiveMode, setIsResponsiveMode] = useState(
@@ -35,6 +36,7 @@ function Navigation() {
   };
   if (!(isHomePage && !isResponsiveMode)) {
     return (
+      <ResponsiveModeProvider>
       <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
         <div className="navbar_logo">
           <img src={logo} alt="Logo" className="logo-image" />
@@ -86,6 +88,7 @@ function Navigation() {
           </button>
         )}
       </div>
+      </ResponsiveModeProvider>
     );
   }
   return null; // Ne rien rendre si le menu doit être caché
