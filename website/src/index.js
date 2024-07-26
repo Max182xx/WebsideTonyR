@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import CguPage from "./pages/CguPage";
 import MentionsLegals from "./pages/MentionsLegals";
+import { ResponsiveModeProvider } from "./components/ResponsiveModeContext";
 
 // Configure les routes et rend l'applications dans le DOM
 const router = createBrowserRouter([
@@ -51,6 +52,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ResponsiveModeProvider>
+      <RouterProvider router={router} />
+    </ResponsiveModeProvider>
   </React.StrictMode>
 );
