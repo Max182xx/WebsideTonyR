@@ -3,11 +3,6 @@ a {
   text-decoration: none;
 }
 
-.image-custom-size {
-  width: 10%;
-  height: 20;
-}
-
 .section_padding {
   padding: 4rem 4rem;
 }
@@ -32,7 +27,7 @@ a {
   margin-bottom: 2rem;
 }
 
-/**/
+
 .sb_footer-links-div {
   width: 300px;
   margin: 1rem;
@@ -40,8 +35,20 @@ a {
   justify-content: flex-start;
   flex-direction: column;
 }
-
+/*Social média */
+.socialmediaContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  
+}
+.image-custom-size {
+  width: 40%;
+  height: 20;
+}
 .socialmedia {
+  
   display: flex;
   flex-direction: row;
 }
@@ -87,5 +94,10 @@ hr {
   .trademark {
     font-size: 2em;
         vertical-align: -0.3em; 
+  }
+
+  .image-custom-size {
+    width: 30%;
+    height: 20;
   }
 }

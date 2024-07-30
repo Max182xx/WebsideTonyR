@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPaintbrush } from "@fortawesome/free-solid-svg-icons";
-import PortfolioPage from "./PortfolioPage";
-import ContactPage from "./ContactPage";
 import { useResponsiveMode } from "../components/ResponsiveModeContext";
 import "../styles/Accueil.css";
 
