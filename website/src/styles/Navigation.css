@@ -1,12 +1,21 @@
 .logo-image {
   width: 100px; 
-  height: auto; 
+  height: auto;
+  margin-right: 2rem;
 }
-
+.navbar_logo{
+  margin-right: 1rem;
+}
+/* Style pour que les liens du menu soit centré */
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
 }
 
 a {
@@ -15,25 +24,22 @@ a {
 
 .navbar {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
-  min-height: 75px;
   padding: 1rem;
   background-color: rgb(177, 228, 228);
   color: rgb(219, 65, 65);
 }
 
 .navbar_links {
-  display: flex;
+  gap: 1rem; /* Maintenez cet espacement pour une meilleure présentation */
 }
 
 .navbar_link {
   padding: 0 0.3rem;
   color: inherit;
-}
+  }
 
 .navbar_burger {
   width: 40px;
@@ -45,14 +51,18 @@ a {
 }
 
 /* Style du menu burger*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 908px) {
+  .logo-image {
+    margin-right: 0.5rem; /* Espacement réduit */
+}
   .navbar_links {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     right: -100vw;
-    bottom: 0;
+    left: auto;
+    top: 0;
     width: 0;
     height: 100vh;
     padding: 2rem;

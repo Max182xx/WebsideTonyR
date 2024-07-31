@@ -8,7 +8,7 @@ function Navigation({ children }) {
   const [showLinks, setShowLinks] = useState(false);
 
   const [isResponsiveMode, setIsResponsiveMode] = useState(
-    window.innerWidth <= 767
+    window.innerWidth <= 908
   );
 
   // Utilisation de useLocation pour exclure la navbar de la page d'accueil
@@ -17,7 +17,7 @@ function Navigation({ children }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsResponsiveMode(window.innerWidth <= 767);
+      setIsResponsiveMode(window.innerWidth <= 908);
     };
 
     // Assure l'affiche du menu burger quand la fenêtre est redimensionné

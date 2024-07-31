@@ -5,6 +5,7 @@ import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPaintbrush } from "@fortawesome/free-solid-svg-icons";
 import { useResponsiveMode } from "../components/ResponsiveModeContext";
 import "../styles/Accueil.css";
+import { Link } from "react-router-dom";
 
 const AccueilPage = () => {
   //state when the menu is clicked
@@ -64,14 +65,28 @@ const AccueilPage = () => {
           </div>
         </main>
       ) : (
-        <main>
-          <div className="main">
-            {/* Éléments spécifiques pour le mode responsive */}
-            <div>
-            <h1>Bonjour, accueil responsive!</h1>
-            <p>Ceci est une version adaptée pour les petits écrans.</p>
-          </div>
-          
+        <main className="main-responsive">
+          {/* Éléments spécifiques pour le mode responsive */}
+          <div className="cont">
+          <h1>Bienvenue sur le site de TONYR</h1>
+
+          <Link to="apropos">
+            <img
+              class="image-adaptive"
+              src="../media/femmeJaponaise.png"
+              alt="Femme japonaise"
+            />
+          </Link>
+          <Link to="portfolio">
+            <img src="../media/hulk.png" class="image-adaptive" alt="hulk" />
+          </Link>
+          <Link to="contact">
+            <img
+              src="../media/picsou03.png"
+              class="image-adaptive"
+              alt="Piscsou"
+            />
+          </Link>
           </div>
         </main>
       )}
