@@ -1,0 +1,20 @@
+/* Classe pour le conteneur qui contient le texte superposé */
+.superposed-text-container {
+  position: relative; /* Positionnement relatif permet d'utiliser les positions absolues des enfants sans affecter la disposition globale */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Styles pour le texte superposé lui-même */
+.text-overlay {
+  position: absolute; /* Positionnement absolu permet de placer précisément le texte par rapport au conteneur parent */
+  top: 50%; /* Place le point de départ du texte au milieu de la hauteur du conteneur parent */
+  left: 50%; /* Place le point de départ du texte au milieu de la largeur du conteneur parent */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Déplace le texte pour qu'il soit parfaitement centré, en corrigeant le décalage causé par la position absolue */
+  color: white;
+}

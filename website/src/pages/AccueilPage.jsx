@@ -6,7 +6,7 @@ import { faPaintbrush } from "@fortawesome/free-solid-svg-icons";
 import { useResponsiveMode } from "../components/ResponsiveModeContext";
 import "../styles/Accueil.css";
 import { Link } from "react-router-dom";
-
+import SuperposedText from "../components/SuperposedText";
 const AccueilPage = () => {
   //state when the menu is clicked
   const [isClicked, setIsClicked] = useState(false);
@@ -68,25 +68,49 @@ const AccueilPage = () => {
         <main className="main-responsive">
           {/* Éléments spécifiques pour le mode responsive */}
           <div className="cont">
-          <h1>Bienvenue sur le site de TONYR</h1>
+            <h1>Bienvenue sur le site de TONYR</h1>
 
-          <Link to="apropos">
-            <img
-              class="image-adaptive"
-              src="../media/femmeJaponaise.png"
-              alt="Femme japonaise"
-            />
-          </Link>
-          <Link to="portfolio">
-            <img src="../media/hulk.png" class="image-adaptive" alt="hulk" />
-          </Link>
-          <Link to="contact">
-            <img
-              src="../media/picsou03.png"
-              class="image-adaptive"
-              alt="Piscsou"
-            />
-          </Link>
+            {/* -------- menu ------------*/}
+            <Link to="apropos">
+              <div className="superposed-text-container">
+                <SuperposedText>
+                  <img
+                    className="image-adaptive"
+                    src="../media/femmeJaponaise.png"
+                    alt="Femme japonaise"
+                  />
+                  <span className="text-overlay">A Propos</span>
+                </SuperposedText>
+              </div>
+            </Link>
+
+            {/* -------- Portfolio ------------*/}
+            <Link to="portfolio">
+              <div className="superposed-text-container">
+                <SuperposedText>
+                  <img
+                    src="../media/hulk.png"
+                    className="image-adaptive"
+                    alt="hulk"
+                  />
+                  <span className="text-overlay">Portfolio</span>
+                </SuperposedText>
+              </div>
+            </Link>
+
+            {/* --------Contact ------------*/}
+            <Link to="contact">
+              <div className="superposed-text-container">
+                <SuperposedText>
+                  <img
+                    src="../media/picsou03.png"
+                    className="image-adaptive"
+                    alt="Piscsou"
+                  />
+                  <span className="text-overlay">Contact</span>
+                </SuperposedText>
+              </div>
+            </Link>
           </div>
         </main>
       )}

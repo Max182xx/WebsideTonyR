@@ -32,7 +32,6 @@
   }
 }
 
-
 .menu {
   height: 200px;
   width: 200px;
@@ -99,9 +98,6 @@
 }
 
 /* Style du main en responsive*/
-
-
-
 .main-responsive {
   min-height: 200vh; /* 100% de la hauteur de la fenêtre de visualisation */
   margin: 0; /* Supprime les marges par défaut */
@@ -117,13 +113,15 @@
   justify-content: center;
   margin: 0.5rem; 
   padding: 0; /* Supprimez les paddings par défaut */
+  
 }
 
 .image-adaptive {
-  max-width: 100%;
-  height: 100%; /* Ajouté pour s'étendre verticalement */
+  width: 100%;
+  height: auto; /* Ajouté pour s'étendre verticalement */
   object-fit: cover;
   justify-content: center;
   display: flex;
   margin-bottom: 1rem;
+  
 }
