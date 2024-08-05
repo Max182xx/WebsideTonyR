@@ -7,6 +7,7 @@ import { useResponsiveMode } from "../components/ResponsiveModeContext";
 import "../styles/Accueil.css";
 import { Link } from "react-router-dom";
 import SuperposedText from "../components/SuperposedText";
+
 const AccueilPage = () => {
   //state when the menu is clicked
   const [isClicked, setIsClicked] = useState(false);

@@ -1,0 +1,19 @@
+.wrapper-text-img{
+    margin: 2rem;
+    
+}
+
+.image {
+    max-width: 320px;
+    float: left;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-right: 2%;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
