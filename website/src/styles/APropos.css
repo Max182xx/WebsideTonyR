@@ -1,3 +1,4 @@
+/* Classe pour envelopper le texte et l'image ensemble */
 .wrapper-text-img{
     margin: 2rem;
     
@@ -11,6 +12,7 @@
     margin-right: 2%;
 }
 
+/* Conteneur pour le carousel */
 .carousel-container {
     display: flex;
     justify-content: center;
