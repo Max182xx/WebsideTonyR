@@ -9,28 +9,28 @@ function Slider() {
       id: 1,
       image: "../media/bjork.png",
       title: "Bjork",
-      text: "bababaabb",
+      text: "",
     },
 
     {
       id: 2,
       image: "../media/monica.png",
       title: "Monica",
-      text: "bababaabb",
+      text: "",
     },
 
     {
       id: 3,
       image: "../media/jack.png",
       title: "Jack",
-      text: "bababaabb",
+      text: "",
     },
 
     {
       id: 4,
       image: "../media/tornade.png",
       title: "Tornade",
-      text: "bababaabb",
+      text: "",
     },
   ];
   // Rendu du composant Carousel avec les propriétés spécifiées

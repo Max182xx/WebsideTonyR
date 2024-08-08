@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPaintbrush } from "@fortawesome/free-solid-svg-icons";
 import { useResponsiveMode } from "../components/ResponsiveModeContext";
@@ -32,6 +32,10 @@ const AccueilPage = () => {
     transform: isClicked ? "translateX(250px)" : "translateX(0)",
     transition: "transform 0.5s ease-in-out",
   };
+  const item4Style = {
+    transform: isClicked ? "translateY(250px)" : "translateX(0)",
+    transition: "transform 0.5s ease-in-out",
+  };
   return (
     <>
       {!isResponsive ? (
@@ -42,33 +46,45 @@ const AccueilPage = () => {
           </div>
           {/* -------- menu items with icons ------------*/}
           <div className="menu-items">
-            <div className="item1" id="item1" style={item1Style}>
-              <center>
-                <a href="/">
-                  <FontAwesomeIcon className="fa" icon={faHouse} />
-                </a>
-              </center>
+            <div className="item1 hover-target" id="item1" style={item1Style}>
+              <a href="apropos">
+                <center>
+                  <FontAwesomeIcon className="fa" icon={faInfo} />
+                </center>
+              </a>
             </div>
-            <div className="item2" id="item2" style={item2Style}>
-              <center>
-                <a href="Portfolio">
+
+            <div className="item2 hover-target" id="item2" style={item2Style}>
+              <a href="Portfolio">
+                <center>
                   <FontAwesomeIcon className="fa" icon={faPalette} />
-                </a>
-              </center>
+                </center>
+              </a>
             </div>
-            <div className="item3" id="item3" style={item3Style}>
-              <center>
-                <a href="Contact">
+
+            <div className="item3 hover-target" id="item3" style={item3Style}>
+              <a href="asavoir">
+                <center>
                   <FontAwesomeIcon className="fa" icon={faPaintbrush} />
-                </a>
-              </center>
+                </center>
+              </a>
             </div>
+
+            <div className="item4 hover-target" id="item4" style={item4Style}>
+              <a href="conctact">
+                <center>
+                  <FontAwesomeIcon className="fa" icon={faPaintbrush} />
+                </center>
+              </a>
+            </div>
+
           </div>
         </main>
+
       ) : (
         <main className="main-responsive">
           {/* Éléments spécifiques pour le mode responsive */}
-          <div className="cont">
+          <div className="menu-image">
             <h1>Bienvenue sur le site de TONYR</h1>
 
             {/* -------- menu ------------*/}

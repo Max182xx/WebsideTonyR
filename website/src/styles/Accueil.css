@@ -14,23 +14,22 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../../public/images/background.webp');
+  background-image: url("../../public/images/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   animation: rotateBackground 60s linear infinite;
-  z-index: -1; 
-  
+  z-index: -1;
 }
 
-@keyframes rotateBackground {
+/*@keyframes rotateBackground {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-}
+}*/
 
 .menu {
   height: 200px;
@@ -49,7 +48,7 @@
 .logo {
   width: 100%;
   height: 100%;
-  background-image: url('../../public/images/logo.webp');
+  background-image: url("../../public/images/logo.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -59,43 +58,55 @@
   width: 120px;
   height: 120px;
   position: relative;
-  margin: auto; 
+  margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  
 }
 
-.menu-items >div{
+.menu-items > div {
   background-color: rgb(248, 248, 248);
   height: 120px;
   width: 120px;
   border-radius: 50%;
   position: relative;
   font-size: 50px;
- 
 }
 
+/* Pour que la totalité des boutons soit cliquable au survol */
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-.fa{
-  position:relative;
+/* Inversion des couleurs au survol*/
+.hover-target:hover .fa {
+  color: white;
+}
+
+/* Style pour les icons */
+.fa {
+  position: relative;
   top: 20px;
   color: rgb(95, 167, 249);
 }
 
-.item2{
+.item2 {
   bottom: 120px;
 }
-.item3{
+.item3 {
   bottom: 240px;
 }
-.menu-items>div:hover{
+.item4 {
+  bottom: 350px;
+}
+
+.menu-items > div:hover {
   background-color: rgb(95, 167, 249);
 }
-.menu-items>div:hover a{
-  color: white;
-}
+
 
 /* Style du main en responsive*/
 .main-responsive {
@@ -103,17 +114,15 @@
   margin: 0; /* Supprime les marges par défaut */
   padding: 0; /* Supprime les paddings par défaut */
   padding-top: 25%;
- 
 }
 
-.cont {
+.menu-image {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap; /* Permet aux éléments enfants de passer à la ligne suivante si nécessaire */
   justify-content: center;
-  margin: 0.5rem; 
+  margin: 0.5rem;
   padding: 0; /* Supprimez les paddings par défaut */
-  
 }
 
 .image-adaptive {
@@ -123,5 +132,4 @@
   justify-content: center;
   display: flex;
   margin-bottom: 1rem;
-  
 }

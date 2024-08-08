@@ -10,6 +10,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import CguPage from "./pages/CguPage";
 import MentionsLegals from "./pages/MentionsLegals";
 import { ResponsiveModeProvider } from "./components/ResponsiveModeContext";
+import ASavoir from "./pages/ASavoir";
 
 // Configure les routes et rend l'applications dans le DOM
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "mentionsLegals",
         element: <MentionsLegals />,
+      },
+      {
+        path: "asavoir",
+        element: <ASavoir/>,
       },
     ],
   },

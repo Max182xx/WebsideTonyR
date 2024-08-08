@@ -38,11 +38,14 @@ function Navigation({ children }) {
     return (
       <ResponsiveModeProvider>
         <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+        
           <div className="navbar_logo">
-            <Link to="/" className="navbar_logo_link">
+          <Link to="/" className="navbar_logo_link">
               <img src={logo} alt="Logo" className="logo-image" />
-            </Link>{" "}
+              </Link>{" "}
           </div>
+          
+
           <ul className="navbar_links">
             <li className="navbar_item slideInDown-1">
               <Link to="/" className="navbar_link" onClick={handleCloseMenu}>
