@@ -93,6 +93,7 @@ a {
   color: rgb(95, 167, 249);
 }
 
+/* Positionnement des éléments autour du menu */
 .item2 {
   bottom: 120px;
 }
@@ -107,6 +108,14 @@ a {
   background-color: rgb(95, 167, 249);
 }
 
+/* Texte sous les liens du menu */
+.text-item{
+  position: relative;
+  top: 10px;
+  color: rgb(95, 167, 249);
+  font-size: 12px;
+  font-weight: bold;
+}
 
 /* Style du main en responsive*/
 .main-responsive {

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faPaintbrush } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useResponsiveMode } from "../components/ResponsiveModeContext";
 import "../styles/Accueil.css";
 import { Link } from "react-router-dom";
@@ -46,18 +47,25 @@ const AccueilPage = () => {
           </div>
           {/* -------- menu items with icons ------------*/}
           <div className="menu-items">
+
             <div className="item1 hover-target" id="item1" style={item1Style}>
               <a href="apropos">
                 <center>
                   <FontAwesomeIcon className="fa" icon={faInfo} />
+                  <div className="text-item">
+                  <p> A propos </p>
+                </div>
                 </center>
               </a>
             </div>
 
             <div className="item2 hover-target" id="item2" style={item2Style}>
-              <a href="Portfolio">
+              <a href="portfolio">
                 <center>
                   <FontAwesomeIcon className="fa" icon={faPalette} />
+                  <div className="text-item">
+                  <p> Portfolio </p>
+                </div>
                 </center>
               </a>
             </div>
@@ -66,6 +74,9 @@ const AccueilPage = () => {
               <a href="asavoir">
                 <center>
                   <FontAwesomeIcon className="fa" icon={faPaintbrush} />
+                  <div className="text-item">
+                  <p> A savoir </p>
+                </div>
                 </center>
               </a>
             </div>
@@ -73,14 +84,16 @@ const AccueilPage = () => {
             <div className="item4 hover-target" id="item4" style={item4Style}>
               <a href="conctact">
                 <center>
-                  <FontAwesomeIcon className="fa" icon={faPaintbrush} />
+                  <FontAwesomeIcon className="fa" icon={faEnvelope}  /> 
+                  <div className="text-item">
+                  <p> Contact </p>
+                </div>
                 </center>
               </a>
             </div>
 
           </div>
         </main>
-
       ) : (
         <main className="main-responsive">
           {/* Éléments spécifiques pour le mode responsive */}
@@ -111,6 +124,20 @@ const AccueilPage = () => {
                     alt="hulk"
                   />
                   <span className="text-overlay">Portfolio</span>
+                </SuperposedText>
+              </div>
+            </Link>
+
+            {/* -------- A savoir ------------*/}
+            <Link to="asavoir">
+              <div className="superposed-text-container">
+                <SuperposedText>
+                  <img
+                    src="../media/cobra.png"
+                    className="image-adaptive"
+                    alt="Cabro"
+                  />
+                  <span className="text-overlay">A savoir</span>
                 </SuperposedText>
               </div>
             </Link>

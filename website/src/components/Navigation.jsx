@@ -63,16 +63,7 @@ function Navigation({ children }) {
                 A propos
               </Link>
             </li>
-            <li className="navbar_item slideInDown-3">
-              <Link
-                to="contact"
-                className="navbar_link"
-                onClick={handleCloseMenu}
-              >
-                {" "}
-                Contact
-              </Link>
-            </li>
+           
             <li className="navbar_item slideInDown-4">
               <Link
                 to="portfolio"
@@ -81,6 +72,26 @@ function Navigation({ children }) {
               >
                 {" "}
                 Portfolio
+              </Link>
+            </li>
+            <li className="navbar_item slideInDown-3">
+              <Link
+                to="asavoir"
+                className="navbar_link"
+                onClick={handleCloseMenu}
+              >
+                {" "}
+               A savoir
+              </Link>
+            </li>
+            <li className="navbar_item slideInDown-3">
+              <Link
+                to="contact"
+                className="navbar_link"
+                onClick={handleCloseMenu}
+              >
+                {" "}
+                Contact
               </Link>
             </li>
           </ul>
