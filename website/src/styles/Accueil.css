@@ -86,6 +86,10 @@ a {
   color: white;
 }
 
+.hover-target:hover .text-item {
+  color: white;
+}
+
 /* Style pour les icons */
 .fa {
   position: relative;
@@ -109,7 +113,7 @@ a {
 }
 
 /* Texte sous les liens du menu */
-.text-item{
+.text-item {
   position: relative;
   top: 10px;
   color: rgb(95, 167, 249);
