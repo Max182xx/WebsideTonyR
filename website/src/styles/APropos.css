@@ -19,3 +19,9 @@
     align-items: center;
     
 }
+
+@media screen and (max-width:1250px) {
+    .carousel-container{
+        display: none;
+    }
+}
