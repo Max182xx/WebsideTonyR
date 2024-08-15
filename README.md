@@ -19,14 +19,8 @@ Ouvrir un teminal et faire les commandes :
 
 -npm install react-icons --save (bibliothèque react-icons / save option qui indique à npm d'ajouter le paquet à la section dependencies de votre fichier package.json )
 
--npm install bootstrap@5
+-Intaller le package  'npm i react-card-flip' dans le projet'
 
--npm install sass
-
--npm -g install json-server
-
--npm start
-
--json-server --port 3001 db.json (démarre le serveur local 3001 pour simuler une API REST et exposé le contenues dans le fichier db.json)
+-Installer le package  'npm i react-responsive-carousel'
 
 Une fois toutes ces commandes appliquées vous avez accès au projet

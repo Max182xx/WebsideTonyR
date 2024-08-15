@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import "../styles/ASavoir.css";
 
-/* Intaller le package  'npm i react-card-flip' dans le projet */
+
 
 function ASavoir() {
   const [flips, setFlips] = useState([false, false]);
 
   function flipCard(index) {
     const newFlips = [...flips];
-    newFlips[index] = !newFlips[index]; // Met à jour l'état de la carte spécifique
+    newFlips[index] = !newFlips[index];
     setFlips(newFlips);
   }
 
