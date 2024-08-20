@@ -38,13 +38,24 @@ function Navigation({ children }) {
     return (
       <ResponsiveModeProvider>
         <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-        
+
+            {/* Elément qui forme la séparation de couleur dans ma navbar  */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#0099ff"
+              fill-opacity="1"
+              d="M0,0L1440,256L1440,320L0,320Z"
+            ></path>
+          </svg>
           <div className="navbar_logo">
-          <Link to="/" className="navbar_logo_link">
+            <Link to="/" className="navbar_logo_link">
               <img src={logo} alt="Logo" className="logo-image" />
-              </Link>{" "}
+            </Link>{" "}
           </div>
-          
 
           <ul className="navbar_links">
             <li className="navbar_item slideInDown-1">
@@ -63,7 +74,7 @@ function Navigation({ children }) {
                 A propos
               </Link>
             </li>
-           
+
             <li className="navbar_item slideInDown-4">
               <Link
                 to="portfolio"
@@ -81,7 +92,7 @@ function Navigation({ children }) {
                 onClick={handleCloseMenu}
               >
                 {" "}
-               A savoir
+                A savoir
               </Link>
             </li>
             <li className="navbar_item slideInDown-3">
