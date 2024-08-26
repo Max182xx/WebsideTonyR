@@ -3,10 +3,25 @@ import React, { useEffect, useRef } from "react";
 const Portfolio = () => {
   // Définition des images
   const images = [
-    { src: "../media/bjork.png", alt: "", text: "Tableaux" },
-    { src: "../media/monica.png", alt: "", text: "Mural intérieur" },
-    { src: "../media/jack.png", alt: "", text: "Mural extérieur" },
-    { src: "../media/tornade.png", alt: "", text: "Imprimé" },
+    {
+      src: "../media/bjork.png",
+      alt: "",
+      text: "Tableaux",
+      link: "Tableaux",
+    },
+    {
+      src: "../media/monica.png",
+      alt: "",
+      text: "Mural intérieur",
+      link: "muralInterieur",
+    },
+    {
+      src: "../media/jack.png",
+      alt: "",
+      text: "Mural extérieur",
+      link: "muralExterieur",
+    },
+    { src: "../media/tornade.png", alt: "", text: "Imprimé", link: "imprime" },
   ];
 
   const isTouchDevice = () => {
@@ -61,8 +76,6 @@ const Portfolio = () => {
         >
           <a
             href={image.link}
-            target="_blank"
-            rel="noopener noreferrer"
             style={{
               textDecoration: "none",
               color: "white",

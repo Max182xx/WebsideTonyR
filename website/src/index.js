@@ -10,7 +10,12 @@ import NotFoundPage from "./pages/NotFoundPage";
 import CguPage from "./pages/CguPage";
 import MentionsLegals from "./pages/MentionsLegals";
 import { ResponsiveModeProvider } from "./components/ResponsiveModeContext";
-import ASavoir from "./pages/ASavoir";
+import ASavoirPage from "./pages/ASavoirPage";
+import TableauxPortfolioPage from "./pages/pagesPortfolio/TableauxPage";
+import MuralInterieurPage from "./pages/pagesPortfolio/MuralInterieurPage"
+import MuralExterieurPage from "./pages/pagesPortfolio/MuralExterieurPage"
+import ImprimePage from "./pages/pagesPortfolio/ImprimePage";
+
 
 // Configure les routes et rend l'applications dans le DOM
 const router = createBrowserRouter([
@@ -49,7 +54,23 @@ const router = createBrowserRouter([
       },
       {
         path: "asavoir",
-        element: <ASavoir/>,
+        element: <ASavoirPage/>,
+      },
+      {
+        path: "tableaux",
+        element: <TableauxPortfolioPage/>,
+      },
+      {
+        path: "muralInterieur",
+        element: <MuralInterieurPage/>,
+      },
+      {
+        path: "muralExterieur",
+        element: <MuralExterieurPage/>,
+      },
+      {
+        path: "imprime",
+        element: <ImprimePage/>,
       },
     ],
   },
