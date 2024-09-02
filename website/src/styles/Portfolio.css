@@ -3,12 +3,13 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  height: 52%;
+  height: 50%;
 }
 
 .item {
   width: 100%;
   cursor: pointer;
+
 }
 
 @media screen and (max-width: 908px) {

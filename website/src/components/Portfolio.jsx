@@ -81,13 +81,18 @@ const Portfolio = () => {
               color: "white",
               display: "block",
               textAlign: "center",
-              fontSize: "100%",
-              fontWeight: "bold",
+              fontSize: "180%",
+              fontWeight: "regular",
             }}
           >
             <div
               className="image-container"
-              style={{ position: "relative", width: "s100%", height: "100%" }}
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "100%",
+                overflow: "hidden",
+              }}
             >
               <img
                 src={image.src}
@@ -101,7 +106,16 @@ const Portfolio = () => {
                 }}
               />
               <div className="text-overlay">
-                <p>{image.text}</p>
+                <p
+                  style={{
+                    background: "rgba(0, 0, 0, 0.5)",
+                    padding: "10px",
+                    borderRadius: "5px",
+                    textAlign: "center",
+                  }}
+                >
+                  {image.text}
+                </p>
               </div>
             </div>
           </a>

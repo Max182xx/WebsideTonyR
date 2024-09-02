@@ -47,13 +47,14 @@ const AccueilPage = () => {
           </div>
           {/* -------- menu items with icons ------------*/}
           <div className="menu-items">
+
             <div className="item1 hover-target" id="item1" style={item1Style}>
               <a href="apropos">
                 <center>
                   <FontAwesomeIcon className="fa" icon={faInfo} />
                   <div className="text-item">
-                    <p> A propos </p>
-                  </div>
+                  <p> A propos </p>
+                </div>
                 </center>
               </a>
             </div>
@@ -63,8 +64,8 @@ const AccueilPage = () => {
                 <center>
                   <FontAwesomeIcon className="fa" icon={faPalette} />
                   <div className="text-item">
-                    <p> Portfolio </p>
-                  </div>
+                  <p> Portfolio </p>
+                </div>
                 </center>
               </a>
             </div>
@@ -74,8 +75,8 @@ const AccueilPage = () => {
                 <center>
                   <FontAwesomeIcon className="fa" icon={faPaintbrush} />
                   <div className="text-item">
-                    <p> A savoir </p>
-                  </div>
+                  <p> A savoir </p>
+                </div>
                 </center>
               </a>
             </div>
@@ -83,13 +84,14 @@ const AccueilPage = () => {
             <div className="item4 hover-target" id="item4" style={item4Style}>
               <a href="conctact">
                 <center>
-                  <FontAwesomeIcon className="fa" icon={faEnvelope} />
+                  <FontAwesomeIcon className="fa" icon={faEnvelope}  /> 
                   <div className="text-item">
-                    <p> Contact </p>
-                  </div>
+                  <p> Contact </p>
+                </div>
                 </center>
               </a>
             </div>
+
           </div>
         </main>
       ) : (

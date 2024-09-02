@@ -54,23 +54,23 @@ const router = createBrowserRouter([
       },
       {
         path: "asavoir",
-        element: <ASavoirPage />,
+        element: <ASavoirPage/>,
       },
       {
         path: "tableaux",
-        element: <TableauxPortfolioPage />,
+        element: <TableauxPortfolioPage/>,
       },
       {
         path: "muralInterieur",
-        element: <MuralInterieurPage />,
+        element: <MuralInterieurPage/>,
       },
       {
         path: "muralExterieur",
-        element: <MuralExterieurPage />,
+        element: <MuralExterieurPage/>,
       },
       {
         path: "imprime",
-        element: <ImprimePage />,
+        element: <ImprimePage/>,
       },
     ],
   },
