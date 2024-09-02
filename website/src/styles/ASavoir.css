@@ -1,0 +1,50 @@
+.container-flip {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.card-front h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.card {
+  width: 45vw;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+  background-color: azure;
+  cursor: pointer;
+  padding: 5%;
+}
+
+.card-back {
+  background-color: beige;
+  height: auto;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 845px) {
+  .container-flip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -3rem;
+  }
+
+  .card {
+    width: 50vh;
+  }
+
+  .card-back {
+    padding: 10%;
+    position: relative;
+  }
+}

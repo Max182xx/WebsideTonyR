@@ -4,11 +4,11 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const ResponsiveModeContext = createContext();
 
 export const ResponsiveModeProvider = ({ children }) => {
-  const [isResponsive, setIsResponsive] = useState(window.innerWidth <= 767);
+  const [isResponsive, setIsResponsive] = useState(window.innerWidth <= 908);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsResponsive(window.innerWidth <= 767);
+      setIsResponsive(window.innerWidth <= 908);
     };
 
     window.addEventListener("resize", handleResize);

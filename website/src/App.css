@@ -16,11 +16,11 @@ body {
   position: relative;
   overflow-x: hidden;
   background-color: rgb(31, 30, 37);
+  color: rgb(126, 125, 123);
 }
 
-
 .main {
-  min-height: 1200vh;
-  padding: 6rem 1rem 1rem;
+  min-height: 120vh;
+  padding: 15rem 1rem 1rem;
   margin: 0;
 }

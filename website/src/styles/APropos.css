@@ -1,0 +1,27 @@
+/* Classe pour envelopper le texte et l'image ensemble */
+.wrapper-text-img{
+    margin: 2rem;
+    
+}
+
+.image {
+    max-width: 320px;
+    float: left;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-right: 2%;
+}
+
+/* Conteneur pour le carousel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:1250px) {
+    .carousel-container{
+        display: none;
+    }
+}

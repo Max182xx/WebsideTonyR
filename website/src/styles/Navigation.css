@@ -1,33 +1,55 @@
-.logo-image {
-  width: 100px; 
-  height: auto; 
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
 
-.navbar {
+.logo-image {
+  width: 100px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.navbar_logo {
+  margin-right: 1rem;
+  z-index: 1;
+}
+
+/* Style pour que les liens du menu soit centré */
+ul {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   width: 100%;
-  min-height: 75px;
+  padding: 1rem;
+  padding-left: 5rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
   padding: 1rem;
   background-color: rgb(177, 228, 228);
   color: rgb(219, 65, 65);
+  z-index: 2;
+  min-height: 20vh;
+}
+
+/*style de la séparation de couleur*/
+svg {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar_links {
-  display: flex;
+  gap: 1rem; /* Espacement pour une meilleure présentation */
 }
 
 .navbar_link {
@@ -36,8 +58,8 @@ a {
 }
 
 .navbar_burger {
-  width: 40px;
-  height: 40px;
+  width: 10%;
+  height: 7%;
   background: transparent;
   color: inherit;
   display: none;
@@ -45,20 +67,25 @@ a {
 }
 
 /* Style du menu burger*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 908px) {
+  .logo-image {
+    margin-right: 0.5rem; /* Espacement réduit */
+  }
   .navbar_links {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     right: -100vw;
-    bottom: 0;
+    left: auto;
+    top: 0;
     width: 0;
     height: 100vh;
     padding: 2rem;
     visibility: hidden;
     background-color: rgb(177, 228, 228);
     transition: all 0.8s ease-out;
+    z-index: 3;
   }
 
   .show-nav .navbar_links {
@@ -76,6 +103,7 @@ a {
     height: 1px;
     background: rgb(27, 27, 27);
   }
+
   /* Cache la derniére petite barre*/
   .navbar_item:last-child::after {
     display: none;
@@ -92,10 +120,13 @@ a {
     top: 1rem;
     right: 1rem;
     border: none;
+    z-index: 4;
   }
+
   .navbar_burger:hover {
     cursor: pointer;
   }
+
   .burger-bar,
   .burger-bar::before,
   .burger-bar::after {
@@ -107,6 +138,7 @@ a {
     background: rgb(219, 65, 65);
     transition: all 0.5s ease-in-out;
   }
+
   .burger-bar::before,
   .burger-bar::after {
     content: "";
@@ -149,7 +181,7 @@ a {
   .show-nav .slideInDown-4 {
     transition: all 1.3s ease-out;
   }
-   .logo-image {
+  .logo-image {
     width: 60px;
-   }
+  }
 }

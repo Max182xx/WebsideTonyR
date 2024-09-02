@@ -4,11 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import { ResponsiveModeProvider } from "./ResponsiveModeContext";
 
-function Navigation({children}) {
+function Navigation() {
   const [showLinks, setShowLinks] = useState(false);
 
   const [isResponsiveMode, setIsResponsiveMode] = useState(
-    window.innerWidth <= 767
+    window.innerWidth <= 908
   );
 
   // Utilisation de useLocation pour exclure la navbar de la page d'accueil
@@ -17,10 +17,10 @@ function Navigation({children}) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsResponsiveMode(window.innerWidth <= 767);
+      setIsResponsiveMode(window.innerWidth <= 908);
     };
 
-    // Assure l'affiche du menu burger quand la fenêtre est redimensionné 
+    // Assure l'affiche du menu burger quand la fenêtre est redimensionné
     window.addEventListener("resize", handleResize);
 
     // Nettoyer l'écouteur d'événements lors du démontage du composant pour éviter les fuites de mémoire
@@ -36,7 +36,6 @@ function Navigation({children}) {
   };
   if (!(isHomePage && !isResponsiveMode)) {
     return (
-      <ResponsiveModeProvider>
       <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
         <div className="navbar_logo">
           <img src={logo} alt="Logo" className="logo-image" />
@@ -88,7 +87,6 @@ function Navigation({children}) {
           </button>
         )}
       </div>
-      </ResponsiveModeProvider>
     );
   }
   return null; // Ne rien rendre si le menu doit être caché

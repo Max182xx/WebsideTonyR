@@ -3,17 +3,22 @@ a {
   text-decoration: none;
 }
 
-.image-custom-size {
-  width: 10%;
-  height: 20;
-}
-
 .section_padding {
   padding: 4rem 4rem;
 }
 
 .footer {
   background-color: rgb(177, 228, 228);
+  width: 100%;
+  position: relative;
+}
+
+/* Style pour la vague */
+svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .sd_footer {
@@ -32,15 +37,25 @@ a {
   margin-bottom: 2rem;
 }
 
-/**/
 .sb_footer-links-div {
   width: 300px;
   margin: 1rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  z-index: 1;
 }
-
+/*Social média */
+.socialmediaContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+.image-custom-size {
+  width: 40%;
+  height: 20;
+}
 .socialmedia {
   display: flex;
   flex-direction: row;
@@ -50,12 +65,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+ 
 }
 
 /*Barre blanche haut-dessus du copyright*/
 hr {
   width: 100%;
   border-top-color: transparent !important;
+  z-index: 1;
 }
 
 .sb_footer-copyright {
@@ -63,12 +80,13 @@ hr {
   line-height: 15px;
   color: white;
   font-weight: 400;
+  z-index: 1;
 }
 
-  .trademark {
-    font-size: 2em;
-        vertical-align: -0.3em; 
-  }
+.trademark {
+  font-size: 2em;
+  vertical-align: -0.3em;
+}
 
 @media screen and (max-width: 667px) {
   .footer {
@@ -86,6 +104,6 @@ hr {
 
   .trademark {
     font-size: 2em;
-        vertical-align: -0.3em; 
+    vertical-align: -0.3em;
   }
 }
